@@ -1,7 +1,7 @@
-Suite 73
+Suite73
 =========
 
-Suite 73 is a all-in-one data management software.
+Suite73 is a all-in-one data management software.
 
 Version
 ----
