@@ -1,7 +1,7 @@
 Suite 73
 =========
 
-Suite 73 is a PHP based data management software.
+Suite 73 is a all-in-one data management software.
 
 Version
 ----
