@@ -5,3 +5,10 @@
 *.swp
 *.out
 *Thumbs.db
+*document.aux
+*document.glo
+*document.ist
+*document.log
+*document.out
+*document.synctex.gz
+*document.toc
