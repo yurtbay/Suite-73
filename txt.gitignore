@@ -1,0 +1,7 @@
+## {system, session} based files you don't need 
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+*Thumbs.db

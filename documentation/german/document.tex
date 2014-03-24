@@ -1,0 +1,136 @@
+% % % % % % % % % % % % % % % % % % % % % % % % % % % %
+%                                                     %
+%   73 Suite Documentation                            %
+%                                                     %
+%   Author:    SCHWARZER, Andre                       %
+%              von RHEIN, Christopher                 %
+%              YURTBAY,   Emre                        %
+%                                                     %
+%   Language:  German                                 %
+%                                                     %
+%   Date:      22. March 2014                         %
+%                                                     %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{amssymb} % Mathe
+\usepackage{amsmath} % Mathe
+\usepackage[utf8x]{inputenc} % Umlaute
+\usepackage[ngerman]{babel}  % Umlaute
+\usepackage[T1]{fontenc}     % Umlaute im PDF
+\usepackage[margin=2.5cm]{geometry} % Layout
+\usepackage{booktabs}
+\usepackage{times}
+\usepackage{colortbl}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{cite}
+\usepackage{color}
+
+
+
+% links
+\usepackage[colorlinks=true, linkcolor=blue, citecolor=blue,]{hyperref}  
+
+% glossar
+\usepackage[nonumberlist]{glossaries} 
+
+\usepackage{hyperref}
+
+\ifx\pdftexversion\undefined
+\usepackage[dvips]{graphicx}
+\else
+\usepackage[pdftex]{graphicx}
+\DeclareGraphicsRule{*}{mps}{*}{}
+\fi
+
+
+\addto\captionsngerman{
+ \renewcommand\glossaryname{}}
+\renewcommand*{\glstextformat}[1]{\textit{\textcolor{black}{#1}} }
+\makeglossary 
+
+\input{glossary} % Glossar folgt
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% Variablen                                           %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % %
+\newcommand{\authorName}{André SCHWARZER, Christopher von RHEIN, Emre YURTBAY}
+\newcommand{\auftraggeber}{Hochschule Bochum - University of Applied Sciences}
+\newcommand{\auftragnehmer}{Studentisches Projekt}
+\newcommand{\projektName}{73 Suite}
+\newcommand{\documentation}{Dokumentation}
+\newcommand{\tags}{\authorName}
+\newcommand{\glossarName}{Erläuterung zu Begriffen und Abkürzungen}
+\title{\projektName}
+\author{\authorName}
+\date{\today}
+
+\definecolor{hellgrau}{rgb}{0.95,0.95,0.95}
+\definecolor{koenigsblau}{rgb}{0.00, 0.09, 0.45}
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% PDF Meta Informationen                              %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % %
+\hypersetup{
+  pdfauthor   = {\authorName},
+  pdfkeywords = {\tags},
+  pdftitle    = {\title~(Doku)}
+} 
+ 
+% % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% Spezielle Formatierung für Anforderungen            %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% \newcommand\addrow[2]{#1 &#2\\ }
+% 
+% \newcommand\addheading[2]{#1 &#2\\ \hline}
+% \newcommand\tabularhead{\begin{tabular}{lp{13cm}}
+% \hline
+% }
+% 
+% \newcommand\addmulrow[2]{ \begin{minipage}[t][][t]{2.5cm}#1\end{minipage}% 
+%    &\begin{minipage}[t][][t]{8cm}
+% \begin{enumerate} #2   \end{enumerate}
+%     \end{minipage}\\ }
+% 
+% \newenvironment{usecase}{\tabularhead}
+% {\hline\end{tabular}}
+
+
+\addto\captionsngerman{\renewcommand{\refname}{}}
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% Dokument                                            %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % %
+\begin{document}
+    \pagenumbering{roman}
+    \input{titlepage}
+    \setcounter{page}{2}
+    \setcounter{tocdepth}{4}
+    \setcounter{secnumdepth}{4}
+    \tableofcontents
+    \clearpage
+    \pagenumbering{arabic}
+ 
+	\begin{abstract}
+		Abstrakte Beschreibung.
+	\end{abstract}	
+	\clearpage
+ 
+ 	%\chapter{Lasten- und Pflichtenheft}
+	\section{Lasten}
+ 	Hier die Lasten
+		\subsection{Last 1}
+ 		Lasten Nummer 1\\Neue Zeile
+		\subsection{Last 2}
+ 		Lasten Nummer 2
+ 	\clearpage
+
+	\section{Pflichten}
+ 	Hier die Pflichen
+
+\end{document}
+
