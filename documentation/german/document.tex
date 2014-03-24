@@ -47,13 +47,11 @@
 \fi
 
 
+\input{glossary}
 \addto\captionsngerman{
  \renewcommand\glossaryname{}}
 \renewcommand*{\glstextformat}[1]{\textit{\textcolor{black}{#1}} }
-\makeglossary 
-
-\input{glossary} % Glossar folgt
-
+\makeglossary
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 % Variablen                                           %
@@ -79,28 +77,7 @@
   pdfauthor   = {\authorName},
   pdfkeywords = {\tags},
   pdftitle    = {\title~(Doku)}
-} 
- 
-% % % % % % % % % % % % % % % % % % % % % % % % % % % %
-% Spezielle Formatierung für Anforderungen            %
-% % % % % % % % % % % % % % % % % % % % % % % % % % % %
-% \newcommand\addrow[2]{#1 &#2\\ }
-% 
-% \newcommand\addheading[2]{#1 &#2\\ \hline}
-% \newcommand\tabularhead{\begin{tabular}{lp{13cm}}
-% \hline
-% }
-% 
-% \newcommand\addmulrow[2]{ \begin{minipage}[t][][t]{2.5cm}#1\end{minipage}% 
-%    &\begin{minipage}[t][][t]{8cm}
-% \begin{enumerate} #2   \end{enumerate}
-%     \end{minipage}\\ }
-% 
-% \newenvironment{usecase}{\tabularhead}
-% {\hline\end{tabular}}
-
-
-\addto\captionsngerman{\renewcommand{\refname}{}}
+}
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 % Dokument                                            %
@@ -116,8 +93,11 @@
     \pagenumbering{arabic}
  
 	\begin{abstract}
-		Abstrakte Beschreibung.
+		Abstrakte Beschreibung \ldots
 	\end{abstract}	
+	\clearpage
+    
+    \printglossaries
 	\clearpage
  
 	\section{Lastenheft}
